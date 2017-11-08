@@ -49,8 +49,9 @@ function driversByName(drivers) {
 
 function totalRevenue(drivers){
   let revenues = [];
+  debugger;
   for (const name of drivers) {
-    revenues.push(drivers.revenue);
+    revenues.push(name.revenue);
     console.log(revenus);
     debugger;
   }
