@@ -23,7 +23,7 @@ function driversByRevenue(drivers) {
     console.log(rev2)
     debugger;
     //return driver1.revenue - driver2.revenue;
-    return rev1.localeCompare(rev2);
+    return driver1.localeCompare(driver2);
   })
   console.log(drivers)
   debugger;
