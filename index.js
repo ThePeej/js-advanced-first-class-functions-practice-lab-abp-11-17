@@ -49,10 +49,13 @@ function driversByName(drivers) {
 
 function totalRevenue(drivers){
   let revenues = [];
-  debugger;
   for (const name of drivers) {
     revenues.push(name.revenue);
     console.log(revenues);
     debugger;
   }
+  const totalRev = revenues.reduce(function(total,current){
+    return total + current;
+  })
+  console.log(totalRev)
 }
