@@ -22,6 +22,7 @@ function driversByRevenue(drivers) {
     console.log(rev1)
     console.log(rev2)
     debugger;
+    return rev1-rev2;
   })
   console.log(drivers)
   debugger;
