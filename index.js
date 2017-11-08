@@ -52,7 +52,7 @@ function totalRevenue(drivers){
   debugger;
   for (const name of drivers) {
     revenues.push(name);
-    console.log(revenus);
+    console.log(revenues);
     debugger;
   }
 }
