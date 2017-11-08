@@ -34,8 +34,8 @@ function driversByRevenue(drivers) {
 function driversByName(drivers) {
   const driversCopy = [...drivers];
   driversCopy.sort(function (driver1, driver2){
-    const name1 = driver1.revenue;
-    const name2 = driver2.revenue;
+    const name1 = driver1.name;
+    const name2 = driver2.name;
     console.log(name1)
     console.log(name2)
     debugger;
