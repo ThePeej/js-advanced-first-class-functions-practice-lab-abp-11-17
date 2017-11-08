@@ -48,7 +48,10 @@ function driversByName(drivers) {
 }
 
 function totalRevenue(drivers){
-  const revenues = drivers.filter(function(driver) {return driver.revenue});
-  console.log(revenues);
-  debugger;
+  let revenues = [];
+  for (const name of drivers) {
+    revenues.push(drivers.revenue);
+    console.log(revenus);
+    debugger;
+  }
 }
