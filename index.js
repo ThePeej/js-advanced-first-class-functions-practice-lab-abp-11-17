@@ -16,22 +16,12 @@ function logDriversByHometown(drivers,hometown){
 }
 
 function driversByRevenue(drivers) {
-  drivers.sort(function(a,b) {
-    console.log(a.revenue)
-    debugger;
-    return parseFloat(a.revenue) - parseFloat(b.revenue);
-  })
-}
-
-/*
   drivers.sort(function (driver1, driver2){
     const rev1 = driver1.revenue;
     const rev2 = driver2.revenue;
     console.log(rev1)
     console.log(rev2)
     debugger;
-    //return driver1.revenue - driver2.revenue;
-    return ${rev1}.localeCompare(driver2);
   })
   console.log(drivers)
   debugger;
