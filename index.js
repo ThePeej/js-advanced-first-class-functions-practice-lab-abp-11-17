@@ -5,3 +5,12 @@ function logDriverNames(drivers){
     debugger;
   })
 }
+
+function logDriversByHometown(drivers,hometown){
+  drivers.forEach(function(index){
+    if (index.hometown === hometown){
+      console.log(index.name)
+      debugger;    
+    }
+  })
+}
