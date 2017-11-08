@@ -16,7 +16,9 @@ function logDriversByHometown(drivers,hometown){
 }
 
 function driversByRevenue(drivers) {
-  drivers.sort(function (driver1, driver2){
+  const driversCopy = [...drivers];
+  
+  driversCopy.sort(function (driver1, driver2){
     const rev1 = driver1.revenue;
     const rev2 = driver2.revenue;
     console.log(rev1)
@@ -25,5 +27,6 @@ function driversByRevenue(drivers) {
     return rev1-rev2;
   })
   console.log(drivers)
+  console.log(driversCopy)
   debugger;
 }
