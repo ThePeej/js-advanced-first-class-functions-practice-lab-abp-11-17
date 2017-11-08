@@ -22,6 +22,7 @@ function driversByRevenue(drivers) {
     const rev2 = driver2.revenue;
     console.log(rev1)
     console.log(rev2)
+    ///debugger;
     return rev1-rev2;
   })
   console.log(drivers)
@@ -29,3 +30,20 @@ function driversByRevenue(drivers) {
   return driversCopy
   ///debugger;
 }
+
+function driversByName(drivers) {
+  const driversCopy = [...drivers];
+  driversCopy.sort(function (driver1, driver2){
+    const name1 = driver1.revenue;
+    const name2 = driver2.revenue;
+    console.log(name1)
+    console.log(name2)
+    debugger;
+    return name1.localeCompare(name2)
+  })
+  console.log(drivers)
+  console.log(driversCopy)
+  return driversCopy
+  ///debugger;
+}
+  
