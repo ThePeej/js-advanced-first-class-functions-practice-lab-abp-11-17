@@ -66,8 +66,8 @@ function totalRevenue(drivers){
 }
 
 function averageRevenue(drivers){
- const total = totalRevenue(drivers);
- const avgRev = total/drivers.length;
- debugger;
+ const total = totalRevenue(drivers); //uses totalRevenue function to get sum of all driver revenues (instead of recreating the function)
+ const avgRev = total/drivers.length; //divides total revenue by number of drivers to get avg
+ ///debugger;
  return avgRev;
 }
