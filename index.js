@@ -17,6 +17,8 @@ function logDriversByHometown(drivers,hometown){
 
 function driversByRevenue(drivers) {
   drivers.sort(function(a,b) {
+    console.log(a.revenue)
+    debugger;
     return parseFloat(a.revenue) - parseFloat(b.revenue);
   })
 }
@@ -34,4 +36,3 @@ function driversByRevenue(drivers) {
   console.log(drivers)
   debugger;
   */
-
