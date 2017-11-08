@@ -47,6 +47,8 @@ function driversByName(drivers) {
   ///debugger;
 }
 
-function totalRevenue(driver){
-  
+function totalRevenue(drivers){
+  const revenues = drivers.filter(function(driver) {return driver.revenue});
+  console.log(revenues);
+  debugger;
 }
