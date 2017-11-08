@@ -48,17 +48,26 @@ function driversByName(drivers) {
 }
 
 function totalRevenue(drivers){
+  // pushes all driver revenues into a single array
   let revenues = [];
   for (const name of drivers) {
     revenues.push(name.revenue);
     console.log(revenues);
     ///debugger;
   }
+  // reduces revenues array into one single sum of revenues
   const totalRev = revenues.reduce(function(total,current){
-    debugger;
+    ///debugger;
     return total + current;
   })
   console.log(totalRev)
-  debugger;
+  ///debugger;
   return totalRev
+}
+
+function averageRevenue(drivers){
+ const total = totalRevenue(drivers);
+ const avgRev = total/drivers.length;
+ debugger;
+ return avgRev;
 }
