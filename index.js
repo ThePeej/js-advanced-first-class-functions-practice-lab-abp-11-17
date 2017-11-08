@@ -38,7 +38,7 @@ function driversByName(drivers) {
     const name2 = driver2.name;
     console.log(name1)
     console.log(name2)
-    debugger;
+    ///debugger;
     return name1.localeCompare(name2)
   })
   console.log(drivers)
@@ -46,4 +46,3 @@ function driversByName(drivers) {
   return driversCopy
   ///debugger;
 }
-  
