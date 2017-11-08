@@ -46,3 +46,7 @@ function driversByName(drivers) {
   return driversCopy
   ///debugger;
 }
+
+function totalRevenue(driver){
+  
+}
